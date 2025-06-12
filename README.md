@@ -24,6 +24,30 @@
 ### 3. Refactored for Maintainability and Performance  
 - All embeddings and preprocessing for concepts are computed once in `main()
 
+### 4. Manual LLM simulation
+LLM - ChatGPT
+Prompt - Given the question: "Question_Here", identify the historical concept(s) this question is based on.
+
+Question 1: Consider the following pairs: Historical place Well - known for 1. Burzahom : Rock-cut shrines 2. Chandra - ketugarh : Terracotta art 3. Ganeshwar : Copper artefacts Which of the pairs given above is/are correctly matched?
+Concepts Extracted:
+Archaeological sites
+Material culture
+
+Question 2: According to Kautilya's Arthashastra, which of the following are correct? 1. A person could be a slave as a result of a judicial punishment. 2. If a female slave bore her master a son, she was legally free. 3. If a son born to a female slave was fathered by her master the son was entitled to the legal status of the master's son. Which of the statements given above are correct?
+Concepts Extracted:
+Law and governance in Mauryan India
+Ancient Legal Systems
+
+Question 3: With reference to Indian history, consider the following texts: 1. Nettipakarana 2. Parishishta Parvan 3. Avadanasataka 4. Trishashtilakshana Mahapurana Which of the above are Jaina texts?
+Concepts Extracted:
+Jaina, Buddhist, and other religious literatures
+Knowledge of major texts
+
+Question 4: From the decline of Guptas until the rise of Harshavardhana in the early seventh century, which of the following kingdoms were holding power in Northern India? 1. The Guptas of Magadha 2. The Paramaras of Malwa 3. The Pushyabhutis of Thanesar 4. The Maukharis of Kanauj 5. The Yadavas of Devagiri 6. The Maitrakas of Valabhi Select the correct answer using the code given below:
+Concepts Extracted:
+Post-Gupta political history
+Formation of early medieval Indian politics
+
 ## 🗂 Directory Structure  
 ```
 │
