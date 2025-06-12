@@ -1,60 +1,39 @@
-# Intern Test Task Template: Question to Concept Mapping
+# Question-to-Concept Mapping System  
+**Author**: Priyansh Jhanwar 
+**Roll Number**: 23B2730 
+**Github portfolio**: https://github.com/priyansh3103?tab=repositories
 
-This template is designed to make it easy to run and evaluate submissions for a question-to-concept mapping task using CSV data and the Anthropic LLM API.
+## 🔧 What I Have Done  
 
-## Folder Structure
+### 1. Built a Modular NLP Pipeline  
+- Designed a pipeline using Python that combines rule-based techniques with semantic NLP to detect relevant concepts.  
+- Implemented **4-level matching logic**:  
+  - Keyword matching
+    For fast and robust matching of important/recurrent keywords against their concepts
+  - Fuzzy matching using `fuzzywuzzy`
+    To make sure similar words/typos also get mapped
+  - Semantic similarity using **Sentence-BERT** (`all-MiniLM-L6-v2`)
+    To understand the semantics of the question and not just depend on keywords
+  - TF-IDF fallback as a last-resort heuristic.  
+    To identify key entities(Names/ORG, Place, Dates) and suggest concepts
 
-```
-.
-├── main.py                 # Entry point, handles CLI and user code
-├── llm_api.py              # Handles Anthropic API calls, loads API key from .env
-├── csv_reader.py           # Reads CSV from resources/ and returns data
-├── resources/              # Folder containing subject CSVs (ancient_history.csv, math.csv, etc.)
-├── .env                    # Stores Anthropic API key
-├── requirements.txt        # Python dependencies
-├── Makefile                # Run commands
-└── README.md               # Instructions
-```
+### 2. Moved Domain Knowledge to External JSON Files  
+- Extracted concept dictionaries from code into separate JSON files per subject (e.g., `ancient_history.json`, `economics.json`) for modularity and scalability.  
+- These JSONs map key terms to conceptual categories (e.g., `"ghantasala" → ["Port Towns", "Trade Centers"]`).  
 
-## Setup Instructions
+### 3. Refactored for Maintainability and Performance  
+- All embeddings and preprocessing for concepts are computed once in `main()
 
-1. **Clone the repository and navigate to the project folder.**
-2. **Install dependencies:**
-   ```
-   make install
-   ```
-3. **Add your Anthropic API key:** --> need not do
-   - Copy your API key into the `.env` file:
-     ```
-     ANTHROPIC_API_KEY=your_anthropic_api_key_here
-     ```
-
-## Usage
-
-Run the program with your desired subject:
-
-```
-make run SUBJECT=math
-```
-Or directly:
-```
-python main.py --subject=math
-```
-
-## Where to Write Your Code
-
-- Open `main.py`.
-- Find the section marked:
-  ```python
-  # --- PLACEHOLDER FOR USER CODE ---
-  # TODO: Implement your question-to-concept mapping logic here.
-
-  ```
-- Write your solution in this section.
-
-## Notes
-- The template uses `python-dotenv` to load environment variables.
-- The Anthropic API is accessed via the `anthropic` Python package.
----
-
-Feel free to reach out if you have any questions!
+## 🗂 Directory Structure  
+│
+├── main.py # Entry point script
+├── extract_concepts.py # Matching logic (refactored into a function)
+├── csv_reader.py # CSV reader for question files
+├── concept_dictionaries/ #holds domain wise keywords to concept mapping
+│ ├── ancient_history.json
+│ ├── economics.json
+│ └── ...
+├── data/
+│ ├── economics.csv # Sample input data 
+│
+├── README.md # Documentation
