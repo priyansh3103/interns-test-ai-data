@@ -1,0 +1,22 @@
+{
+    "charges": ["Electrostatics", "Coulomb's Law"],
+    "dielectric constant": ["Material Properties", "Electrostatics"],
+    "electric field": ["Field Theory", "Vector Fields"],
+    "work": ["work done"],
+    "triboelectric_effect": ["Charge Transfer", "Electron Exchange"],
+    "dipole_rotation": ["Torque in Magnetic Fields"],
+    "magnetic_dipole_moment": ["Magnetism", "Dipole Theory"],
+    "earth_magnet": ["Geomagnetism", "Compass Alignment"],
+    "power_factor": ["AC Circuits", "Resistive Loads"],
+    "resonance_lcr": ["Impedance Matching", "AC Resonance"],
+    "fringe": ["Wave Optics", "Interference Patterns"],
+    "polarization": ["Transverse Waves", "Light Nature"],
+    "polaroid_glasses": ["Applications of Polarization", "Light Intensity Reduction"],
+    "wave_theory": ["Quantum Phenomena", "Photoelectric Effect"],
+    "interference": ["Energy in Waves", "Superposition Principle"],
+    "wavefront": ["Geometric Optics", "Lens Effects"],
+    "beta_decay": ["Nuclear Physics", "Radioactive Decay"],
+    "gamma": ["Nuclear Excitation", "Energy States"],
+    "isotones": ["Nuclear Species", "Neutron Count"],
+    "em_wave": ["Electromagnetic Theory", "Wave Propagation"]
+  }

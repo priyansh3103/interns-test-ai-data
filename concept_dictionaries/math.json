@@ -1,0 +1,17 @@
+{
+  "profit_percentage": ["Profit and Loss", "Percentage Calculations"],
+  "range": ["Algebraic Equations"],
+  "value": ["Algebraic Equations"],
+  "ratio": ["Ratio and Proportion"],
+  "integer": ["Percentage Increase", "Integer Constraints"],
+  "remaining": [ "Remainder Problems"],
+  "respectively": ["multivariables"],
+  "profit": ["Optimization"],
+  "compound_interest": ["Exponential Growth", "Simple vs. Compound Interest"],
+  "percentage": ["Percentage", "Ratio Problems"],
+  "efficiency": ["Optimization", "Percentage Efficiency"],
+  "transaction": ["Profit and Loss"],
+  "investment": [ "Investment Proportions"],
+  "triplets": ["Combinatorics", "Integer Solutions"],
+  "dice": ["Probability", "Permutations"]
+}

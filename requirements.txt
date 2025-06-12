@@ -1,2 +1,6 @@
 anthropic
 python-dotenv
+fuzzywuzzy
+python-Levenshtein
+spacy
+sklearn
