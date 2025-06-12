@@ -25,6 +25,7 @@
 - All embeddings and preprocessing for concepts are computed once in `main()
 
 ## 🗂 Directory Structure  
+```
 │
 ├── main.py # Entry point script
 ├── extract_concepts.py # Matching logic (refactored into a function)
@@ -37,3 +38,4 @@
 │ ├── economics.csv # Sample input data 
 │
 ├── README.md # Documentation
+```
